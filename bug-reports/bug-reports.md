@@ -1,5 +1,9 @@
 Title: BUG-1 Favorite button not working after closing login popup
 
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
 Steps:
 1. Open catalogue page
 2. Click "Add to favorites"
