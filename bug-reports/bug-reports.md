@@ -1,4 +1,4 @@
-Title: Favorite button not working after closing login popup
+Title: BUG-1 Favorite button not working after closing login popup
 
 Steps:
 1. Open catalogue page
