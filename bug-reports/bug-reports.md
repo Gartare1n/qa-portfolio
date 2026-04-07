@@ -40,3 +40,32 @@ Catalogue sidebar remains visible and adjusts to screen size (responsive behavio
 
 Severity: Low  
 Priority: Low
+
+***
+
+Title: BUG-03 Search input shifts due to hidden duplicate element in header on non-home pages  
+
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
+Steps:
+1. Open homepage
+2. Observe header layout (logo, search bar, profile, cart)
+3. Navigate to any other page
+4. Compare header layout
+
+Actual Result:
+Search input shifts slightly to the left
+Search field width is reduced
+
+Expected Result:
+Header layout remains consistent across all pages
+Search input position and size do not change
+
+Additional Info:
+An extra hidden element with class "hidden md:d-block" appears in the DOM
+This element affects layout spacing despite being invisible
+
+Severity: Low
+Priority: Medium
