@@ -69,3 +69,33 @@ This element affects layout spacing despite being invisible
 
 Severity: Low
 Priority: Medium
+
+***
+
+Title: BUG-04 Search input accepts extremely large text causing UI break and performance issues  
+
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
+Steps:
+1. Open support/search section
+2. Paste a very large text (~100,000+ characters) into the search input
+3. Observe input field and search button
+
+Actual Result:
+- Page becomes slow and unresponsive
+- Search button disappears visually
+- Search functionality remains active but button is not visible
+
+Expected Result:
+- Input should have a reasonable character limit
+- UI should remain stable
+- Search button should remain visible and accessible
+
+Additional Info:
+No input length validation is applied
+Issue may lead to performance degradation on low-end devices
+
+Severity: Medium  
+Priority: Medium
