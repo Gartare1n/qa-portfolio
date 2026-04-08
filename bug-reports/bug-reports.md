@@ -176,3 +176,32 @@ Even though API returns 200 status, it still reveals user existence via error me
 
 Severity: Medium  
 Priority: Medium
+
+***
+
+Title: BUG-08 Discount for additional service is present in API but not displayed in UI  
+
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
+Steps:
+1. Open product page with additional service (e.g. return insurance)
+2. Observe displayed price
+3. Check network response for the same service
+
+Actual Result:
+- UI shows only current price (e.g. 199)
+- No discount or old price displayed
+- API response contains:
+  - old_price: 299
+  - discount: 33%
+
+Expected Result:
+Either:
+- UI displays discount consistently with API  
+OR  
+- API does not include discount data if not intended to be shown
+
+Severity: Low / Medium  
+Priority: Medium
