@@ -1,19 +1,19 @@
 Title: BUG-01 Favorite button not working after closing login popup
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open catalogue page
 2. Click "Add to favorites"
 3. Close login popup
 4. Click again
 
-Actual Result:
+Actual Result:  
 Button does not respond
 
-Expected Result:
+Expected Result:  
 Login popup appears again or product is added after login
 
 Severity: Medium  
@@ -23,19 +23,19 @@ Priority: Medium
 
 Title: BUG-02 Catalogue sidebar closes when browser window is resized horizontally  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open homepage
 2. Click "Catalogue" button in the top-left corner
 3. Gradually decrease browser window width
 
-Actual Result:
+Actual Result:  
 Catalogue sidebar closes automatically
 
-Expected Result:
+Expected Result:  
 Catalogue sidebar remains visible and adjusts to screen size (responsive behavior)
 
 Severity: Low  
@@ -45,25 +45,25 @@ Priority: Low
 
 Title: BUG-03 Search input shifts due to hidden duplicate element in header on non-home pages  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open homepage
 2. Observe header layout (logo, search bar, profile, cart)
 3. Navigate to any other page
 4. Compare header layout
 
-Actual Result:
+Actual Result:  
 Search input shifts slightly to the left
 Search field width is reduced
 
-Expected Result:
+Expected Result:  
 Header layout remains consistent across all pages
 Search input position and size do not change
 
-Additional Info:
+Additional Info:  
 An extra hidden element with class "hidden md:d-block" appears in the DOM
 This element affects layout spacing despite being invisible
 
@@ -74,26 +74,26 @@ Priority: Medium
 
 Title: BUG-04 Search input accepts extremely large text causing UI break and performance issues  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open support section
 2. Paste a very large text (~100,000+ characters) into the search input
 3. Observe input field and search button
 
-Actual Result:
+Actual Result:  
 - Page becomes slow and unresponsive
 - Search button disappears visually
 - Search functionality remains active but button is not visible
 
-Expected Result:
+Expected Result:  
 - Input should have a reasonable character limit
 - UI should remain stable
 - Search button should remain visible and accessible
 
-Additional Info:
+Additional Info:  
 No input length validation is applied
 Issue may lead to performance degradation on low-end devices
 
@@ -104,21 +104,21 @@ Priority: Medium
 
 Title: BUG-05 Sorting dropdown text becomes hidden when multiple filters are applied  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open any section of the catalog
 2. Apply multiple filters
 3. Observe sorting dropdown element
 
-Actual Result:
+Actual Result:  
 - Sorting dropdown shrinks
 - Text label (e.g. "Sort by rating") becomes hidden
 - Only dropdown icon remains visible
 
-Expected Result:
+Expected Result:  
 - Sorting dropdown remains fully visible
 - Text label is readable regardless of applied filters
 
@@ -129,16 +129,16 @@ Priority: Low
 
 Title: BUG-06 "Personal data processing" link redirects to inaccessible Google Drive file  
 
-Environment:
-Browser: Brave (latest), Safari (latest)
+Environment:  
+Browser: Brave (latest), Safari (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open login/registration popup
 2. Locate the consent text at the bottom
 3. Click on "Personal data processing" link
 
-Actual Result: 
+Actual Result:  
 User is redirected to a Google Drive page with an error: "This file cannot be opened because it violates Google Drive Terms of Service"
 
 Expected Result: 
@@ -151,11 +151,11 @@ Priority: High
 
 Title: BUG-07 API exposes user existence through error message during login  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open login form
 2. Enter email that is not registered
 3. Enter any password
@@ -163,15 +163,15 @@ Steps:
 5. Observe error message
 6. Repeat with registered email and wrong password
 
-Actual Result:
+Actual Result:  
 System returns different error messages:
 - "Sign In user not exist"
 - "Sign In wrong password"
 
-Expected Result:
+Expected Result:  
 System should return a generic error message (e.g. "Wrong credentials") without revealing whether the user exists
 
-Additional info: 
+Additional info:  
 Even though API returns 200 status, it still reveals user existence via error messages, which may lead to user enumeration
 
 Severity: Medium  
@@ -181,24 +181,24 @@ Priority: Medium
 
 Title: BUG-08 Discount for additional service is present in API but not displayed in UI  
 
-Environment:
-Browser: Brave (latest)
+Environment:  
+Browser: Brave (latest)  
 OS: macOS
 
-Steps:
+Steps:  
 1. Open product page with additional service (e.g. return insurance)
 2. Observe displayed price
 3. Check network response for the same service
 
-Actual Result:
+Actual Result:  
 - UI shows only current price (e.g. 199)
 - No discount or old price displayed
 - API response contains:
   - old_price: 299
   - discount: 33%
 
-Expected Result:
-Either:
+Expected Result:  
+Either:  
 - UI displays discount consistently with API  
 OR  
 - API does not include discount data if not intended to be shown
