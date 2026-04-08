@@ -79,7 +79,7 @@ Browser: Brave (latest)
 OS: macOS
 
 Steps:
-1. Open support/search section
+1. Open support section
 2. Paste a very large text (~100,000+ characters) into the search input
 3. Observe input field and search button
 
