@@ -11,19 +11,19 @@ Manual testing of e-commerce website
 - Checkout
 
 ## 🧪 Testing Types
-- Functional testing (...)
-- UI testing
-- Exploratory testing
+- Functional testing (Checklist, Exploratory, Specification-based (Equivalence Partitioning, Boundary Value Analysis, State Transition))
+- UI/UX testing
 
 ## 🛠 Tools Used
-- Chrome DevTools (planned)
+- Manual testing techniques
+- Chrome DevTools
 - Postman (planned)
-- Manual testing techniques (...)
 
 ## 📂 Artifacts
-- Test cases → /test-cases
-- Checklists → /checklists
-- Bug reports → /bug-reports
+- Test cases -> /test-cases
+- Checklists -> /checklists
+- Bug reports -> /bug-reports
+- Evidence -> /evidence
 
 ## 🧠 Notes
 Testing was performed manually with focus on positive, negative, edge cases and user behavior.
