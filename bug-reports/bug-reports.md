@@ -138,9 +138,41 @@ Steps:
 2. Locate the consent text at the bottom
 3. Click on "Personal data processing" link
 
-Actual Result: User is redirected to a Google Drive page with an error: "This file cannot be opened because it violates Google Drive Terms of Service"
+Actual Result: 
+User is redirected to a Google Drive page with an error: "This file cannot be opened because it violates Google Drive Terms of Service"
 
-Expected Result: User is redirected to a valid and accessible page with personal data processing policy
+Expected Result: 
+User is redirected to a valid and accessible page with personal data processing policy
 
 Severity: Medium  
 Priority: High
+
+***
+
+Title: BUG-07 API exposes user existence through error message during login  
+
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
+Steps:
+1. Open login form
+2. Enter email that is not registered
+3. Enter any password
+4. Submit login
+5. Observe error message
+6. Repeat with registered email and wrong password
+
+Actual Result:
+System returns different error messages:
+- "Sign In user not exist"
+- "Sign In wrong password"
+
+Expected Result:
+System should return a generic error message (e.g. "Wrong credentials") without revealing whether the user exists
+
+Additional info: 
+Even though API returns 200 status, it still reveals user existence via error messages, which may lead to user enumeration
+
+Severity: Medium  
+Priority: Medium
