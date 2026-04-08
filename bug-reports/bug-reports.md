@@ -99,3 +99,28 @@ Issue may lead to performance degradation on low-end devices
 
 Severity: Medium  
 Priority: Medium
+
+***
+
+Title: BUG-05 Sorting dropdown text becomes hidden when multiple filters are applied  
+
+Environment:
+Browser: Brave (latest)
+OS: macOS
+
+Steps:
+1. Open any section of the catalog
+2. Apply multiple filters
+3. Observe sorting dropdown element
+
+Actual Result:
+- Sorting dropdown shrinks
+- Text label (e.g. "Sort by rating") becomes hidden
+- Only dropdown icon remains visible
+
+Expected Result:
+- Sorting dropdown remains fully visible
+- Text label is readable regardless of applied filters
+
+Severity: Low
+Priority: Low
