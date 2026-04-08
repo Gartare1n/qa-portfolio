@@ -124,3 +124,23 @@ Expected Result:
 
 Severity: Low
 Priority: Low
+
+***
+
+Title: BUG-06 "Personal data processing" link redirects to inaccessible Google Drive file  
+
+Environment:
+Browser: Brave (latest), Safari (latest)
+OS: macOS
+
+Steps:
+1. Open login/registration popup
+2. Locate the consent text at the bottom
+3. Click on "Personal data processing" link
+
+Actual Result: User is redirected to a Google Drive page with an error: "This file cannot be opened because it violates Google Drive Terms of Service"
+
+Expected Result: User is redirected to a valid and accessible page with personal data processing policy
+
+Severity: Medium
+Priority: High
