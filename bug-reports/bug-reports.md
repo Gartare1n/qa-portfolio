@@ -67,7 +67,7 @@ Additional Info:
 An extra hidden element with class "hidden md:d-block" appears in the DOM
 This element affects layout spacing despite being invisible
 
-Severity: Low
+Severity: Low  
 Priority: Medium
 
 ***
@@ -122,7 +122,7 @@ Expected Result:
 - Sorting dropdown remains fully visible
 - Text label is readable regardless of applied filters
 
-Severity: Low
+Severity: Low  
 Priority: Low
 
 ***
@@ -142,5 +142,5 @@ Actual Result: User is redirected to a Google Drive page with an error: "This fi
 
 Expected Result: User is redirected to a valid and accessible page with personal data processing policy
 
-Severity: Medium
+Severity: Medium  
 Priority: High
