@@ -4,8 +4,6 @@
 
 Manual testing of a large-scale e-commerce web application with focus on real user scenarios, edge cases, and system behavior.
 
----
-
 ## 🔍 Scope
 
 * Authentication (Login/Registration)
@@ -13,8 +11,6 @@ Manual testing of a large-scale e-commerce web application with focus on real us
 * Product Page
 * Cart
 * Checkout
-
----
 
 ## 🧪 Testing Types
 
@@ -26,16 +22,12 @@ Manual testing of a large-scale e-commerce web application with focus on real us
   * State Transition Testing
 * UI/UX testing
 
----
-
 ## 🛠 Tools Used
 
 * Manual testing techniques
 * Chrome DevTools (Elements, Network)
 * Basic API analysis
 * Postman (in progress)
-
----
 
 ## 📂 Artifacts
 
@@ -45,8 +37,6 @@ Manual testing of a large-scale e-commerce web application with focus on real us
 * Evidence (screenshots, gifs) -> `/evidence`
 * Network Analysis -> `/network-analysis`
 
----
-
 ## 🔍 Key Findings
 
 * UI issues affecting usability (header, filters, responsive behavior)
@@ -54,8 +44,6 @@ Manual testing of a large-scale e-commerce web application with focus on real us
 * Broken external link in consent flow
 * Inconsistency between UI and API (discount not reflected in UI)
 * Potential user enumeration issue during authentication
-
----
 
 ## 🌐 Network & API Insights
 
@@ -66,8 +54,6 @@ Manual testing of a large-scale e-commerce web application with focus on real us
   * UI blocks
   * additional services
 * Multiple API calls are used to update cart, which may lead to inconsistent UI state if one of the requests fails
-
----
 
 ## 🧠 Notes
 
