@@ -16,7 +16,6 @@ Manual testing of a large-scale e-commerce web application with focus on real us
 
 * Functional testing (Checklist-based, Exploratory)
 * Specification-based testing:
-
   * Equivalence Partitioning
   * Boundary Value Analysis
   * State Transition Testing
